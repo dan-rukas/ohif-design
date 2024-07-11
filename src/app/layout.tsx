@@ -25,18 +25,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav>
-          <h1>OHIF</h1> 
-        <p><Button variant="ghost">Button</Button></p>
-        <p>.</p>
-        <p><Button variant="default">Button</Button></p>
-        <p>.</p>
-        <p><Button variant="secondary">Button</Button></p>
-        <p>.</p>
-        <p><Button variant="outline">Button</Button></p>
-        <p>.</p>
-        <p><Button variant="link">Button</Button></p>
-        <p>.</p>
+        <main>
+          <h1>OHIF Component Design</h1> 
+          <h2>Button</h2>
+          <div className="row">
+            <div className="example"><Button variant="default">Primary Button</Button></div>
+            <div className="example"><Button variant="secondary">Secondary Button</Button></div>
+            <div className="example"><Button variant="ghost">Ghost Button</Button></div>
+            <div className="example"><Button variant="outline">Button</Button></div>
+            <div className="example"><Button variant="link">Link</Button></div>
+          </div>
+          <h2>Button</h2>
+
         <p><Button variant="ghost" size="icon">?</Button></p>
         <p>.</p>
         <p>
@@ -51,7 +51,7 @@ export default function RootLayout({
           </SelectContent>
         </Select>
         </p>
-        </nav>
+        </main>
         {children}
       </body>
     </html>
