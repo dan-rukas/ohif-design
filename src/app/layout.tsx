@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Button } from "@/components/ui/button"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,8 +26,31 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav>
-          <h1>OHIF</h1> <Button className="bg-highlight" variant="outline">Button</Button>
-
+          <h1>OHIF</h1> 
+        <p><Button variant="ghost">Button</Button></p>
+        <p>.</p>
+        <p><Button variant="default">Button</Button></p>
+        <p>.</p>
+        <p><Button variant="secondary">Button</Button></p>
+        <p>.</p>
+        <p><Button variant="outline">Button</Button></p>
+        <p>.</p>
+        <p><Button variant="link">Button</Button></p>
+        <p>.</p>
+        <p><Button variant="ghost" size="icon">?</Button></p>
+        <p>.</p>
+        <p>
+        <Select>
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Theme" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="light">Light</SelectItem>
+            <SelectItem value="dark">Dark</SelectItem>
+            <SelectItem value="system">System</SelectItem>
+          </SelectContent>
+        </Select>
+        </p>
         </nav>
         {children}
       </body>
