@@ -8,6 +8,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,32 +29,65 @@ export default function RootLayout({
       <body className={inter.className}>
         <main>
           <h1>OHIF Component Design</h1> 
+
+          <h2>Color System</h2>
+          <div className="row">
+            <div className="example2">
+              
+            </div>
+            <div className="example2">
+              <div className="w-16 h-16 bg-actions rounded"></div>
+            </div>
+            <div className="example2">
+              <div className="w-16 h-16 bg-infosecondary rounded"></div>
+            </div>
+            <div className="example2">
+              <div className="w-16 h-16 bg-highlight rounded"></div>
+            </div>
+            <div className="example2">
+              <div className="w-16 h-16 bg-white rounded"></div>
+            </div>
+  
+          </div>
+
           <h2>Button</h2>
           <div className="row">
             <div className="example"><Button variant="default">Primary Button</Button></div>
             <div className="example"><Button variant="secondary">Secondary Button</Button></div>
             <div className="example"><Button variant="ghost">Ghost Button</Button></div>
-            <div className="example"><Button variant="outline">Button</Button></div>
+            <div className="example"><Button variant="ghost" size="icon">?</Button></div>
+            {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
             <div className="example"><Button variant="link">Link</Button></div>
           </div>
-          <h2>Button</h2>
 
-        <p><Button variant="ghost" size="icon">?</Button></p>
-        <p>.</p>
-        <p>
-        <Select>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Theme" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="light">Light</SelectItem>
-            <SelectItem value="dark">Dark</SelectItem>
-            <SelectItem value="system">System</SelectItem>
-          </SelectContent>
-        </Select>
-        </p>
+          <h2>Select</h2>
+          <div className="row">
+            <div className="example">
+              <Select>
+                <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Theme" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="light">Light</SelectItem>
+                  <SelectItem value="dark">Dark</SelectItem>
+                  <SelectItem value="system">System</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+        <h2>Input</h2>
+        <div className="row">
+            <div className="example">
+              <div className="inline-block">
+                <div className="inline-block mr-4"><Label htmlFor="email">Patient Weight</Label></div>
+                <div className="inline-block"><Input type="email" placeholder="(kg)" /></div>
+              </div>
+            </div>
+        </div>
+
         </main>
-        {children}
+       
       </body>
     </html>
   );

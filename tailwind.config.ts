@@ -35,6 +35,10 @@ const config = {
           DEFAULT: "hsl(var(--actions))",
           foreground: "hsl(var(--actions-foreground))",
         },
+        infosecondary: {
+          DEFAULT: "hsl(var(--infosecondary))",
+          foreground: "hsl(var(--infosecondary-foreground))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

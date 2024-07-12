@@ -10,6 +10,8 @@
       --highlight: 191 74% 63%;
       --actions: 214 98% 60%;
       --actions-foreground: 214 98% 60%;
+      --infosecondary: 200 46% 65%; 
+      --infosecondary-foreground: 200 46% 65%; 
       --background: 0 0% 3.9%;
       --foreground: 0 0% 98%;
       --card: 0 0% 3.9%;
@@ -71,7 +73,7 @@
       @apply border-border;
     }
     body {
-      @apply bg-background text-foreground;
+      @apply bg-background text-foreground text-base;
     }
     main {
       @apply max-w-6xl my-12 mx-auto py-6;
@@ -89,9 +91,13 @@
 
   @layer utilities {
     .row {
-      @apply flex flex-row flex-wrap py-8 mb-6 border rounded-md;
+      @apply flex flex-row flex-wrap py-10 mb-6 border rounded-md;
     }
     .example {
       @apply flex-initial px-6;
+    }
+
+    .example2 {
+      @apply flex-initial px-2;
     }
   }
