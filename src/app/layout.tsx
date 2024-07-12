@@ -117,19 +117,7 @@ export default function RootLayout({
         </main>
 
         </ThemeProvider>
-        <Script id="change-background-color" strategy="afterInteractive">
-        {`
-          function changeBackgroundColor() {
-            var select = document.getElementById("color-select");
-            var rows = document.querySelectorAll(".row");
-            rows.forEach(row => {
-              row.style.backgroundColor = select.value;
-            });
-          }
 
-          document.getElementById("color-select").addEventListener("change", changeBackgroundColor);
-        `}
-      </Script>
       </body>
     </html>
   );
