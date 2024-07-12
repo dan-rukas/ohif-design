@@ -73,7 +73,7 @@
 
 
 
-/* ORIGINAL THEME 
+/* ORIGINAL THEME for comparison and testing
 
 
 @layer base {
@@ -140,7 +140,7 @@
       @apply max-w-6xl my-12 mx-auto py-6;
     }
     h1 {
-      @apply text-5xl font-semibold;
+      @apply text-5xl font-semibold py-4;
     }
     h2 {
       @apply text-4xl font-semibold py-4;

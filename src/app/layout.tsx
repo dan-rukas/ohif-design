@@ -32,8 +32,6 @@ export default function RootLayout({
 }>) {
   return (
 
-
-
     <html lang="en">
       <body className={inter.className}>
       <ThemeProvider
@@ -46,20 +44,7 @@ export default function RootLayout({
         <main>
           <h1>OHIF Component Design</h1> 
 
-
-
-
-
           <BackgroundColorSelector />
-
-  <div className="row">
-    Content here
-  </div>
-
-
-
-
-
 
           <h2>Color System</h2>
           <div className="row">

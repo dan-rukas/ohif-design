@@ -1,3 +1,3 @@
-# OHIF Component Design
+# OHIF Viewer Component Design
 
-Updated design to Shadcn/ui components for responsive OHIF Viewer
+Design in-progress for OHIF Viewer components. Testing layouts and responsive designs.

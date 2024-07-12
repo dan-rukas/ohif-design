@@ -23,7 +23,7 @@ export default function BackgroundColorSelector() {
   const handleColorChange = (value: string) => {
     setSelectedColor(value);
   };
-
+ 
   return (
     <div>
       <Select onValueChange={handleColorChange}>
