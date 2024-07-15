@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/themeprovider"
 import { Button } from "@/components/ui/button"
 import { Button2 } from "@/components/ui/button2"
+import { Switch } from "@/components/ui/switch"
 import {
   Select,
   SelectContent,
@@ -111,6 +112,14 @@ export default function RootLayout({
                 <div className="inline-block"><Input type="email" placeholder="(kg)" /></div>
               </div>
             </div>
+        </div>
+
+        <h2>Switch</h2>
+
+        <div className="row">
+          <div className="example">
+            <Switch />
+          </div>
         </div>
 
         {children}
