@@ -7,6 +7,8 @@ import { ThemeProvider } from "@/components/themeprovider"
 import { Button } from "@/components/ui/button"
 import { Button2 } from "@/components/ui/button2"
 import { Switch } from "@/components/ui/switch"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Checkbox } from "@/components/ui/checkbox"
 import {
   Select,
   SelectContent,
@@ -115,12 +117,40 @@ export default function RootLayout({
         </div>
 
         <h2>Switch</h2>
-
         <div className="row">
           <div className="example">
             <Switch />
           </div>
         </div>
+
+        <h2>Checkbox</h2>
+        <div className="row">
+          <div className="example">
+              <div className="items-top flex space-x-2">
+                <Checkbox id="terms1" />
+                <div className="grid gap-1.5 leading-none">
+                  <label>
+                    Accept terms and conditions
+                  </label>
+              </div>
+          </div>
+          </div>
+        </div>
+
+        <h2>Tabs</h2>
+        <div className="row">
+          <div className="example">
+            <Tabs defaultValue="account" className="w-[400px]">
+              <TabsList>
+                <TabsTrigger value="account">Circle</TabsTrigger>
+                <TabsTrigger value="password">Sphere</TabsTrigger>
+                <TabsTrigger value="square">Square</TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
+        </div>
+
+
 
         {children}
         </main>
