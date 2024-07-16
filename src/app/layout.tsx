@@ -81,16 +81,17 @@ export default function RootLayout({
             <div className="example"><Button variant="link">Link</Button></div>
           </div>
 
+          {/*}
           <h2>Button 2</h2>
           <div className="row">
             <div className="example"><Button2 className="" variant="default">Primary Button</Button2></div>
             <div className="example"><Button2 variant="secondary">Secondary Button</Button2></div>
             <div className="example"><Button2 variant="ghost">Ghost Button</Button2></div>
             <div className="example"><Button2 variant="ghost" size="icon">?</Button2></div>
-            {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
+            <div className="example"><Button variant="outline">Button</Button></div> 
             <div className="example"><Button2 variant="link">Link</Button2></div>
           </div>
-
+          */}
           <h2>Select</h2>
           <div className="row">
             <div className="example">
@@ -155,12 +156,12 @@ export default function RootLayout({
         <div className="row">
           <div className="example">
             <ScrollArea className="h-[150px] w-[350px] rounded-md border border-input bg-background p-4">
-              Jokester began sneaking into the castle in the middle of the night and leaving
-              jokes all over the place: under the king's pillow, in his soup, even in the
-              royal toilet. The king was furious, but he couldn't seem to stop Jokester. And
-              then, one day, the people of the kingdom discovered that the jokes left by
-              Jokester were so funny that they couldn't help but laugh. And once they
-              started laughing, they couldn't stop.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua.
             </ScrollArea>
           </div>
         </div>
