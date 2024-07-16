@@ -123,10 +123,9 @@ export default function RootLayout({
 
         <h2>Slider</h2>
         <div className="row">
-            <div className="example">
-            <Slider className="w-[60%]" defaultValue={[50]} max={100} step={1} />
-
-            </div>
+              <div className="w-40 px-5">
+                <Slider className="w-full" defaultValue={[50]} max={100} step={1} />
+              </div>
         </div>
 
         <h2>Switch</h2>
