@@ -10,6 +10,7 @@ import { Switch } from "@/components/ui/switch"
 import { Slider } from "@/components/ui/slider"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Separator } from "@/components/ui/separator"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Select,
@@ -155,7 +156,9 @@ export default function RootLayout({
             <Tabs defaultValue="account" className="w-[400px]">
               <TabsList>
                 <TabsTrigger value="account">Circle</TabsTrigger>
+                <Separator orientation="vertical" />
                 <TabsTrigger value="password">Sphere</TabsTrigger>
+                <Separator orientation="vertical" />
                 <TabsTrigger value="square">Square</TabsTrigger>
               </TabsList>
             </Tabs>
