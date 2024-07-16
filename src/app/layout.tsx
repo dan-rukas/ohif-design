@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/themeprovider"
 import { Button } from "@/components/ui/button"
 import { Button2 } from "@/components/ui/button2"
 import { Switch } from "@/components/ui/switch"
+import { Slider } from "@/components/ui/slider"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -92,6 +93,8 @@ export default function RootLayout({
             <div className="example"><Button2 variant="link">Link</Button2></div>
           </div>
           */}
+
+
           <h2>Select</h2>
           <div className="row">
             <div className="example">
@@ -118,6 +121,14 @@ export default function RootLayout({
             </div>
         </div>
 
+        <h2>Slider</h2>
+        <div className="row">
+            <div className="example">
+            <Slider className="w-[60%]" defaultValue={[50]} max={100} step={1} />
+
+            </div>
+        </div>
+
         <h2>Switch</h2>
         <div className="row">
           <div className="example">
@@ -132,7 +143,7 @@ export default function RootLayout({
                 <Checkbox id="terms1" />
                 <div className="grid gap-1.5 leading-none">
                   <label>
-                    Accept terms and conditions
+                    Display inactive segmentations
                   </label>
               </div>
           </div>
