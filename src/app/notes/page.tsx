@@ -23,29 +23,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 
-export default function Colors() {
+export default function Notes() {
   return (
     <main>
-    <h1>Colors</h1> 
+    <h1>Notes</h1> 
 
-    <div className="row">
-      <div className="example2">
-        
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-actions rounded"></div>
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-infosecondary rounded"></div>
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-highlight rounded"></div>
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-white rounded"></div>
-      </div>
-
-    </div>
     </main>
   )
 }

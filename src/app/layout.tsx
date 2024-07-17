@@ -49,6 +49,7 @@ export default function RootLayout({
           >
 
         <main>
+        <h3 className="text-primary">OHIF Viewer Design System</h3> 
           <Nav />
         {children}
         </main>

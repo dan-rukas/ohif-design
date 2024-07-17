@@ -26,29 +26,7 @@ import "./globals.css";
 export default function HomeTest() {
   return (
     <main>
-    <h1>OHIF Component Design 2</h1> 
-
     <BackgroundColorSelector />
-
-    <h2>Color System Test</h2>
-    <div className="row">
-      <div className="example2">
-        
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-actions rounded"></div>
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-infosecondary rounded"></div>
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-highlight rounded"></div>
-      </div>
-      <div className="example2">
-        <div className="w-16 h-16 bg-white rounded"></div>
-      </div>
-
-    </div>
 
     <h2>Button default</h2>
     <div className="row">

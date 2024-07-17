@@ -24,9 +24,21 @@ import {
             </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
+            <Link href="/colors" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Colors
+                </NavigationMenuLink>
+            </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
             <Link href="/playground" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Playground
+                </NavigationMenuLink>
+            </Link>
+            <Link href="/notes" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Notes
                 </NavigationMenuLink>
             </Link>
             </NavigationMenuItem>

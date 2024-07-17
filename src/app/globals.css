@@ -212,7 +212,7 @@
       @apply bg-background text-foreground text-base;
     }
     main {
-      @apply max-w-6xl my-12 mx-auto py-6;
+      @apply max-w-6xl my-3 mx-auto py-6;
     }
     h1 {
       @apply text-5xl font-semibold py-4;
