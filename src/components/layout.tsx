@@ -21,7 +21,6 @@ import {
 } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import Nav from '@/components/nav'
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -38,7 +37,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-
     <html lang="en">
       <body className={inter.className}>
       <ThemeProvider
@@ -47,15 +45,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-
         <main>
-          <Nav />
+          TESTING
         {children}
         </main>
 
         </ThemeProvider>
 
-      </body>
+    </body>
     </html>
+
   );
 }
