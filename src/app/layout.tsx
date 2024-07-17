@@ -72,8 +72,7 @@ export default function RootLayout({
   
           </div>
 
-          <h2>Button</h2>
-
+          <h2>Button default</h2>
           <div className="row">
             <div className="example"><Button className="" variant="default">Primary Button</Button></div>
             <div className="example"><Button variant="secondary">Secondary Button</Button></div>
@@ -81,6 +80,26 @@ export default function RootLayout({
             <div className="example"><Button variant="ghost" size="icon">?</Button></div>
             {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
             <div className="example"><Button variant="link">Link</Button></div>
+          </div>
+
+          <h2>Button small</h2>
+          <div className="row">
+            <div className="example"><Button className="" variant="default" size="sm">Primary Button</Button></div>
+            <div className="example"><Button variant="secondary" size="sm">Secondary Button</Button></div>
+            <div className="example"><Button variant="ghost" size="sm">Ghost Button</Button></div>
+            <div className="example"><Button variant="ghost" size="icon">?</Button></div>
+            {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
+            <div className="example"><Button variant="link"  size="sm">Link</Button></div>
+          </div>
+
+          <h2>Button large</h2>
+          <div className="row">
+            <div className="example"><Button className="" variant="default" size="lg">Primary Button</Button></div>
+            <div className="example"><Button variant="secondary" size="lg">Secondary Button</Button></div>
+            <div className="example"><Button variant="ghost" size="lg">Ghost Button</Button></div>
+            <div className="example"><Button variant="ghost" size="icon">?</Button></div>
+            {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
+            <div className="example"><Button variant="link"  size="lg">Link</Button></div>
           </div>
 
           {/*}
