@@ -63,6 +63,13 @@ export default function Playground() {
             </TabsList>
           </Tabs>
         </div>
+
+        <div className="flex items-center my-2"></div>
+
+        <div className="h-7 bg-bkg-full my-0.5 rounded text-base flex items-center justify-between">
+          <span className="text-infosecondary ml-2">Segmentation list</span>
+          <div className="mt-1.5 mr-0.5"><Button variant="ghost" size="icon" ><icons.chevronOpen /></Button></div>
+        </div>
         
       </div>
 
