@@ -48,11 +48,20 @@ export default function Playground() {
           <div className=""></div>
         </div>
 
-        <div className="flex items-center">
-         <Label className="whitespace-nowrap mx-1">Radius (mm)</Label>
-         <Slider className="w-full mx-1" defaultValue={[50]} max={100} step={1} />
+        <div className="flex items-center my-2">
+         <Label className="w-20 whitespace-nowrap mx-1">Radius (mm)</Label>
+         <Slider className="flex-1 mx-1" defaultValue={[50]} max={100} step={1} />
          <Input className="w-10 mx-1" placeholder="32" />
+        </div>
 
+        <div className="flex items-center my-2">
+         <Label className="w-20 whitespace-nowrap mx-1">Shape</Label>
+          <Tabs defaultValue="account" className="flex-1 mx-1">
+            <TabsList className="">
+              <TabsTrigger value="account">Circle</TabsTrigger>
+              <TabsTrigger value="password">Sphere</TabsTrigger>
+            </TabsList>
+          </Tabs>
         </div>
         
       </div>
