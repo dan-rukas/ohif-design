@@ -31,6 +31,9 @@ const config = {
     extend: {
       colors: {
         highlight: "hsl(var(--highlight))",
+        "bkg-low": "hsl(var(--bkg-low))",
+        "bkg-med": "hsl(var(--bkg-med))",
+        "bkg-full": "hsl(var(--bkg-full))",
         actions: {
           DEFAULT: "hsl(var(--actions))",
           foreground: "hsl(var(--actions-foreground))",

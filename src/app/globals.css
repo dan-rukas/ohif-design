@@ -11,6 +11,9 @@
       --highlight: 191 74% 63%;
       --actions: 214 98% 60%;
       --actions-foreground: 214 98% 60%;
+      --bkg-low: 236 62% 5%;
+      --bkg-med: 234 64% 10%;
+      --bkg-full: 219 90 15%; 
       --infosecondary: 200 46% 65%; 
       --infosecondary-foreground: 200 46% 65%; 
       --background: 0 0% 3.9%;
@@ -201,9 +204,6 @@
 
 
 
-
-
-
   @layer base {
     * {
       @apply border-border;
@@ -212,7 +212,7 @@
       @apply bg-background text-foreground text-base;
     }
     main {
-      @apply max-w-6xl my-3 mx-auto py-6;
+      @apply max-w-6xl my-4 mx-auto py-6;
     }
     h1 {
       @apply text-5xl font-semibold py-4;
