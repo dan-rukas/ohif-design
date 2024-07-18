@@ -24,19 +24,15 @@ import { Label } from "@/components/ui/label"
 import icons from '../../components/icons'; 
 
 
-export default function Playground() {
+const IconsPage = () => {
   return (
-    <main>
-    <h1>Playground</h1> 
-
-      <div className="w-60 h-10 bg-bkg-med rounded-t p-2 flex items-start justify-start">
-        <div className="flex justify-start items-start">
-          <div><Button variant="ghost" size="icon"><icons.download className="w-6 h-6" /></Button></div>
-          <div className="text-lg text-infosecondary inline-block ml-2 mt-px">Segmentation</div>
-        </div>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="flex items-center space-x-4">
+        <icons.download className="w-6 h-6 text-blue-500 hover:text-white transition-colors duration-200" />
+        <icons.viewList className="w-6 h-6 text-blue-500 hover:text-white transition-colors duration-200" />
       </div>
+    </div>
+  );
+};
 
-
-  </main>
-  )
-}
+export default IconsPage;
