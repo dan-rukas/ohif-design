@@ -91,8 +91,8 @@ export default function HomeTest() {
   <div className="row">
       <div className="example">
         <div className="inline-block">
-          <div className="inline-block mr-4"><Label htmlFor="email">Patient Weight</Label></div>
-          <div className="inline-block"><Input type="email" placeholder="(kg)" /></div>
+          <div className="inline-block mr-4"><Label>Patient Weight</Label></div>
+          <div className="inline-block"><Input placeholder="(kg)" /></div>
         </div>
       </div>
   </div>

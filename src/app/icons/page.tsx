@@ -24,12 +24,21 @@ import { Label } from "@/components/ui/label"
 import icons from '../../components/icons'; 
 
 
+
 const IconsPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="flex items-center space-x-4">
-        <icons.download className="w-6 h-6 text-blue-500 hover:text-white transition-colors duration-200" />
-        <icons.viewList className="w-6 h-6 text-blue-500 hover:text-white transition-colors duration-200" />
+        {icons.download ? (
+          <icons.download className="w-6 h-6 text-white hover:text-white transition-colors duration-200" />
+        ) : (
+          <span>Download Icon not found</span>
+        )}
+        {icons.listView ? (
+          <icons.viewList className="w-6 h-6 text-blue-500 hover:text-white transition-colors duration-200" />
+        ) : (
+          <span>List View Icon not found</span>
+        )}
       </div>
     </div>
   );
