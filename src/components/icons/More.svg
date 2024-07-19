@@ -3,8 +3,8 @@
     <title>icon-more</title>
     <g id="icon-more" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect id="Rectangle" x="0" y="0" width="24" height="24" rx="4"></rect>
-        <circle id="Oval" fill="#currentColor" cx="6" cy="12" r="2"></circle>
-        <circle id="Oval" fill="#currentColor" cx="12" cy="12" r="2"></circle>
-        <circle id="Oval" fill="#currentColor" cx="18" cy="12" r="2"></circle>
+        <circle id="Oval" fill="currentColor" cx="6" cy="12" r="2"></circle>
+        <circle id="Oval" fill="currentColor" cx="12" cy="12" r="2"></circle>
+        <circle id="Oval" fill="currentColor" cx="18" cy="12" r="2"></circle>
     </g>
 </svg>
