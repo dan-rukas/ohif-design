@@ -160,7 +160,13 @@ export default function HomeTest() {
   <h2>Toggle</h2>
   <div className="row">
     <div className="example">
+      <Toggle><icons.toolLayout /> </Toggle>
       <Toggle><icons.toolLength /> </Toggle>
+      <Toggle><icons.toolZoom /> </Toggle>
+      <Toggle><icons.toolMove /> </Toggle>
+      <Toggle><icons.tool3dRotate /> </Toggle>
+      <Toggle><icons.toolCapture /> </Toggle>
+      <Toggle><icons.toolCrosshair /> </Toggle>
     </div>
   </div>
 
