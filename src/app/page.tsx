@@ -13,6 +13,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
 import { Toggle } from "@/components/ui/toggle"
 import icons from '@/components/icons'; 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Select,
@@ -157,16 +163,94 @@ export default function HomeTest() {
   </div>
 
 
-  <h2>Toggle</h2>
+  <h2>Toggle & Tooltip</h2>
   <div className="row">
     <div className="example">
-      <Toggle><icons.toolLayout /> </Toggle>
-      <Toggle><icons.toolLength /> </Toggle>
-      <Toggle><icons.toolZoom /> </Toggle>
-      <Toggle><icons.toolMove /> </Toggle>
-      <Toggle><icons.tool3dRotate /> </Toggle>
-      <Toggle><icons.toolCapture /> </Toggle>
-      <Toggle><icons.toolCrosshair /> </Toggle>
+    <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.toolLayout /></Toggle></TooltipTrigger>
+          <TooltipContent>
+            Layout
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.toolLength /> </Toggle></TooltipTrigger>
+          <TooltipContent>
+            Measure
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.toolZoom /> </Toggle></TooltipTrigger>
+          <TooltipContent>
+            Zoom
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.toolMove /> </Toggle></TooltipTrigger>
+          <TooltipContent>
+            Move
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.tool3dRotate /> </Toggle></TooltipTrigger>
+          <TooltipContent>
+            3D Rotate
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.toolCapture /> </Toggle></TooltipTrigger>
+          <TooltipContent>
+            Capture
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      <TooltipProvider delayDuration={150}>
+        <Tooltip>
+          <TooltipTrigger><Toggle><icons.toolCrosshair /> </Toggle></TooltipTrigger>
+          <TooltipContent>
+            Crosshair
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+
+
+  <h2>Tooltip alone</h2>
+  <div className="row">
+    <div className="example">
+    <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger>Hello</TooltipTrigger>
+          <TooltipContent>
+            Layout
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     </div>
   </div>
 
