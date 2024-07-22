@@ -11,6 +11,7 @@ import { Slider } from "@/components/ui/slider"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
+import { Toggle } from "@/components/ui/toggle"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Select,
@@ -63,7 +64,7 @@ export default function Playground() {
           </Tabs>
         </div>
 
-        <div className="my-2"></div>
+        <div className="my-4"></div>
 
         <div className="h-7 bg-bkg-full my-0.5 rounded text-base flex items-center justify-between">
           <span className="text-infosecondary ml-2">Segmentation list</span>

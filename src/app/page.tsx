@@ -11,6 +11,8 @@ import { Slider } from "@/components/ui/slider"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
+import { Toggle } from "@/components/ui/toggle"
+import icons from '@/components/icons'; 
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Select,
@@ -153,6 +155,18 @@ export default function HomeTest() {
       </ScrollArea>
     </div>
   </div>
+
+
+  <h2>Toggle</h2>
+  <div className="row">
+    <div className="example">
+      <Toggle><icons.toolLength /> </Toggle>
+    </div>
+  </div>
+
+
+
+
   </main>
   )
 }
