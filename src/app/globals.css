@@ -237,3 +237,13 @@
       @apply flex-initial px-4;
     }
   }
+
+
+  /* Additional CSS edits to components */
+
+  /* Tooltip */
+
+  .TooltipContent[data-side='bottom'] {
+    animation-name: slideDown;
+  }
+  

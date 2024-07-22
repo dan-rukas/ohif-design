@@ -31,7 +31,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import "./globals.css";
 
-export default function HomeTest() {
+export default function Home() {
   return (
     <main>
     <BackgroundColorSelector />
@@ -42,7 +42,6 @@ export default function HomeTest() {
       <div className="example"><Button variant="secondary">Secondary Button</Button></div>
       <div className="example"><Button variant="ghost">Ghost Button</Button></div>
       <div className="example"><Button variant="ghost" size="icon">?</Button></div>
-      {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
       <div className="example"><Button variant="link">Link</Button></div>
     </div>
 
@@ -52,7 +51,6 @@ export default function HomeTest() {
       <div className="example"><Button variant="secondary" size="sm">Secondary Button</Button></div>
       <div className="example"><Button variant="ghost" size="sm">Ghost Button</Button></div>
       <div className="example"><Button variant="ghost" size="icon">?</Button></div>
-      {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
       <div className="example"><Button variant="link"  size="sm">Link</Button></div>
     </div>
 
@@ -62,21 +60,10 @@ export default function HomeTest() {
       <div className="example"><Button variant="secondary" size="lg">Secondary Button</Button></div>
       <div className="example"><Button variant="ghost" size="lg">Ghost Button</Button></div>
       <div className="example"><Button variant="ghost" size="icon">?</Button></div>
-      {/*} <div className="example"><Button variant="outline">Button</Button></div> */}
       <div className="example"><Button variant="link"  size="lg">Link</Button></div>
     </div>
 
-    {/*}
-    <h2>Button 2</h2>
-    <div className="row">
-      <div className="example"><Button2 className="" variant="default">Primary Button</Button2></div>
-      <div className="example"><Button2 variant="secondary">Secondary Button</Button2></div>
-      <div className="example"><Button2 variant="ghost">Ghost Button</Button2></div>
-      <div className="example"><Button2 variant="ghost" size="icon">?</Button2></div>
-      <div className="example"><Button variant="outline">Button</Button></div> 
-      <div className="example"><Button2 variant="link">Link</Button2></div>
-    </div>
-    */}
+
 
 
     <h2>Select</h2>
@@ -163,96 +150,35 @@ export default function HomeTest() {
   </div>
 
 
-  <h2>Toggle & Tooltip</h2>
+  <h2>Toggle (for tools)</h2>
   <div className="row">
     <div className="example">
-    <TooltipProvider delayDuration={150}>
-        <Tooltip>
-          <TooltipTrigger><Toggle><icons.toolLayout /></Toggle></TooltipTrigger>
-          <TooltipContent>
-            Layout
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+    <Toggle><icons.toolLayout /></Toggle>
+    <Toggle><icons.toolLength /></Toggle>
+    <Toggle><icons.toolZoom /></Toggle>
+    <Toggle><icons.toolMove /></Toggle>
+    <Toggle><icons.tool3dRotate /></Toggle>
+    <Toggle><icons.toolCapture /></Toggle>
+    <Toggle><icons.toolCrosshair /></Toggle>
+    
+    </div>
+  </div>
 
+
+  <h2>Tooltip</h2>
+  <div className="row">
+    <div className="example">
       <TooltipProvider delayDuration={150}>
         <Tooltip>
-          <TooltipTrigger><Toggle><icons.toolLength /> </Toggle></TooltipTrigger>
-          <TooltipContent>
-            Measure
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-
-      <TooltipProvider delayDuration={150}>
-        <Tooltip>
-          <TooltipTrigger><Toggle><icons.toolZoom /> </Toggle></TooltipTrigger>
-          <TooltipContent>
+          <TooltipTrigger asChild><Toggle><icons.toolZoom /></Toggle></TooltipTrigger>
+          <TooltipContent side="bottom">
             Zoom
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-
-      <TooltipProvider delayDuration={150}>
-        <Tooltip>
-          <TooltipTrigger><Toggle><icons.toolMove /> </Toggle></TooltipTrigger>
-          <TooltipContent>
-            Move
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-
-      <TooltipProvider delayDuration={150}>
-        <Tooltip>
-          <TooltipTrigger><Toggle><icons.tool3dRotate /> </Toggle></TooltipTrigger>
-          <TooltipContent>
-            3D Rotate
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-
-      <TooltipProvider delayDuration={150}>
-        <Tooltip>
-          <TooltipTrigger><Toggle><icons.toolCapture /> </Toggle></TooltipTrigger>
-          <TooltipContent>
-            Capture
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-
-      <TooltipProvider delayDuration={150}>
-        <Tooltip>
-          <TooltipTrigger><Toggle><icons.toolCrosshair /> </Toggle></TooltipTrigger>
-          <TooltipContent>
-            Crosshair
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-
-      
-      
-      
-      
-      
-      
-      
     </div>
   </div>
 
-
-  <h2>Tooltip alone</h2>
-  <div className="row">
-    <div className="example">
-    <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger>Hello</TooltipTrigger>
-          <TooltipContent>
-            Layout
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    </div>
-  </div>
 
 
 
