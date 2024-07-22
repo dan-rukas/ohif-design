@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>panelStudies</title>
+    <g id="panelStudies" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="studies" transform="translate(2, 2)" stroke="currentColor" stroke-width="1.5">
+            <path d="M5.2173913,14.7826087 L0.869565217,14.7826087 C0.389317609,14.7826087 0,14.3932911 0,13.9130435 L0,0.869565217 C0,0.389317609 0.389317609,0 0.869565217,0 L13.9130435,0 C14.3932911,0 14.7826087,0.389317609 14.7826087,0.869565217 L14.7826087,5.2173913" id="Path"></path>
+            <rect id="Rectangle" x="5.2173913" y="5.2173913" width="14.7826087" height="14.7826087" rx="1"></rect>
+        </g>
+    </g>
+</svg>

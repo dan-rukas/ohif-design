@@ -1,0 +1,29 @@
+/* src/components/Grid.css */
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box-border {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .box-border.border-r {
+    border-right: 1px solid blue;
+  }
+  
+  .box-border.border-b {
+    border-bottom: 1px solid blue;
+  }
+  
+  .box-border.border-l {
+    border-left: 1px solid blue;
+  }
+  
+  .box-border.border-t {
+    border-top: 1px solid blue;
+  }
+  

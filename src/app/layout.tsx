@@ -66,55 +66,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en" suppressHydrationWarning>
         <head />
         <body>
-          <main>
-            <h2>OHIF Viewer Design System</h2>
-            <Nav />
-          </main>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+
             {children}
-          </ThemeProvider>
+
         </body>
       </html>
     </>
   )
 }
 
-
-
-
-{/*}
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-
-    <html lang="en">
-      <body className={inter.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-
-        <main>
-        <h3 className="text-primary">OHIF Viewer Design System</h3> 
-        
-          <Nav />
-        {children}
-        </main>
-
-        </ThemeProvider>
-
-      </body>
-    </html>
-  );
-}
-(*/}
